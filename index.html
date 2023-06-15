@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Listing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab" id="your-tab">Your Cards</button>
+      <button class="tab" id="all-tab active">All Cards</button>
+      <button class="tab" id="blocked-tab">Blocked Cards</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by card name" />
+    </div>
+
+    <div class="filter-dropdown">
+      <label for="card-type-filter">Filter by card type:</label>
+      <select id="card-type-filter">
+        <option value="all">All</option>
+        <option value="burner">Burner</option>
+        <option value="subscription">Subscription</option>
+      </select>
+    </div>
+
+    <div id="card-list"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
